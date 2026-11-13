@@ -65,6 +65,16 @@ footer{
   margin-top:56px;padding-top:16px;border-top:1px solid var(--hair);
   font:12px/1.8 "PingFang SC",sans-serif;color:var(--muted);text-align:center;
 }
+.dlbar{margin:26px 0 6px;text-align:center}
+.dlbtn{
+  display:inline-block;padding:17px 38px;border-radius:12px;background:var(--accent);
+  color:#fff !important;border:none;text-decoration:none;
+  font:700 18px/1 "PingFang SC","Hiragino Sans GB",sans-serif;letter-spacing:.04em;
+  box-shadow:0 5px 16px rgba(168,54,42,.25);
+}
+.dlbtn:active{transform:translateY(1px)}
+.dlhint{margin-top:11px;font:12.5px/1.7 "PingFang SC",sans-serif;color:var(--muted)}
+
 /* 目录页 */
 .index .lead{text-align:center;font-size:16px;color:var(--muted);margin:26px 0 44px}
 .issue{display:block;color:inherit;text-decoration:none;border:none;
@@ -97,7 +107,9 @@ footer{
   .takeaway{font-size:16.5px;line-height:1.7;padding:16px 16px}
   footer{margin-top:40px;font-size:11px}
 }
+@page{size:A4;margin:16mm 14mm}
 @media print{
+  .dlbar{display:none}
   html{background:#fff}
   body{width:auto;box-shadow:none;padding:0}
   a{color:inherit;border:none}
@@ -110,6 +122,7 @@ footer{
   <h1>科技新闻简报</h1>
   <div class="meta"><span>2026年11月10日（周二）</span><span>11/9 晚间 – 11/10 深夜（JST）</span></div>
 </header>
+<div class="dlbar"><a class="dlbtn" href="2026-11-10.pdf" download>⬇ 保存这一期（PDF）</a><div class="dlhint">点一下就能存到手机或电脑，不用注册、不用装 App</div></div>
 <h2>一、重大新闻</h2><article class="item"><h3>1. 台积电董事会通过：第三季股利调升至 9 元，并认购 Anthropic 与 OpenAI 股份</h3><p>台积电召开董事会，除核准 2026 年第三季每股现金股利 9 元外，还决议认购 Anthropic 与 OpenAI 股份。一边发现金、一边押注 AI 模型公司，被市场视为&quot;卖铲人&quot;开始直接下注淘金者。</p><p class="src">来源：<a href="https://finance.technews.tw/2026/11/10/tsmcs-third-quarter-cash-dividend-reached-nt9/">finance.technews.tw</a></p></article><article class="item"><h3>2. 黄仁勋承认婚外情，对象疑为新加坡公司中国籍高层，美方国安疑虑升温</h3><p>辉达执行长黄仁勋承认婚外情，据报道对象是一家新加坡公司的中国籍高层，美方怀疑该公司将辉达 AI 芯片走私到中国。中国学者分析，这场风波恐导致美国对中先进 AI 芯片出口进一步收紧；事件已从个人丑闻升级为供应链与国安议题。</p><p class="src">来源：<a href="https://technews.tw/2026/11/10/jensen-huang-extramarital-affair-national-security-concerns-china-us-ai-chip-exports-tighten/">technews.tw</a></p></article><article class="item"><h3>3. 中国取得辉达芯片的两条路径曝光：走私，与租用东南亚数据中心算力</h3><p>报道指出，在出口管制之下，中国取得或使用顶尖芯片主要靠两条路：一是经第三地走私，二是直接租用东南亚数据中心的算力。这也解释了为何美方正在讨论把管制范围扩大到海外数据中心。</p><p class="src">来源：<a href="https://technews.tw/2026/11/10/china-nvidia-ai-chip-access-smuggling-renting-southeast-asia-data-center-compute-power-methods/">technews.tw</a></p></article><article class="item"><h3>4. 软银第二季净损 1.1 万亿日元（约 70 亿美元），美国数据中心预付款拖累</h3><p>软银集团表示，因支援美国数据中心兴建计划而支付高额预付款，7–9 月净损达 1.1 万亿日元。AI 基建的&quot;先付钱、后收租&quot;模式，正让资产负债表先承压。</p><p class="src">来源：<a href="https://finance.technews.tw/2026/11/10/softbank-group-posts-7-billion-net-loss-in-q2/">finance.technews.tw</a></p></article><article class="item"><h3>5. 联发科 10 月营收 550.25 亿元，年增 5.8%</h3><p>联发科公告 10 月营收 550.25 亿元，月减 0.7%、年增 5.8%；前 10 个月营收 5,244.16 亿元，年增 5.35%。</p><p class="src">来源：<a href="https://finance.technews.tw/2026/11/10/mediateks-october-revenue-increased-by-5-8-year-on-year/">finance.technews.tw</a></p></article><h2>二、行业动态</h2><ul><li><strong>航天</strong>：欧洲太空总署赫拉号（Hera）抵达 Didymos 双小行星系统，拍下首张近距离影像，将评估 2022 年 DART 撞击的实际效果。<a href="https://technews.tw/2026/11/10/hera-captures-didymos-binary-asteroid-system-after-dart-impact/">technews.tw</a></li><li><strong>月球计划</strong>：NASA 把原用于火星的工程测试车改装成核动力月球车「承诺号」，预算控制在 4 亿美元，目标 2028 年底登陆月球南极、执行为期 18 个月任务。<a href="https://technews.tw/2026/11/10/promise-lunar-rover-moon-mission/">technews.tw</a></li><li><strong>外送</strong>：foodpanda 调整平台费，一般用户与 pandapro 会员每单平均多付 2–6 元，反映外送专法上路后的成本变化。<a href="https://technews.tw/2026/11/10/foodpanda-20261110/">technews.tw</a></li><li><strong>政策</strong>：12 月起台湾航线全程禁用加热菸，违者最高可处 5 年以下有期徒刑。<a href="https://technews.tw/2026/11/10/december-flights-heated-tobacco-ban-violators-5-years-prison/">technews.tw</a></li><li><strong>电子纸</strong>：元太科技投资美国 Soofa，布局太阳能电子纸社区资讯看板。<a href="https://finance.technews.tw/2026/11/10/e-ink-announces-strategic-investment-in-soofa-to-advance-sustainable-community-signage/">finance.technews.tw</a></li><li><strong>金融</strong>：欧洲资管巨擘东方汇理进军台湾 ETF 市场，首发 00993B 聚焦 20–35 年期美元公司债。<a href="https://finance.technews.tw/2026/11/10/00993b/">finance.technews.tw</a></li></ul><h2>三、你可能感兴趣的</h2><ol><li><strong>赫拉号首拍双小行星</strong>：2022 年人类第一次&quot;撞偏&quot;小行星，如今终于能近距离验收成果，还关系到未来行星防御是否可行。<a href="https://technews.tw/2026/11/10/hera-captures-didymos-binary-asteroid-system-after-dart-impact/">technews.tw</a></li><li><strong>用火星零件拼出月球车</strong>：NASA 预算紧缩下的&quot;物尽其用&quot;，核动力版本要闯月球南极的极寒长夜。<a href="https://technews.tw/2026/11/10/promise-lunar-rover-moon-mission/">technews.tw</a></li><li><strong>foodpanda 涨价</strong>：每单多 2–6 元，常点外送的人可以算算改买会员划不划算。<a href="https://technews.tw/2026/11/10/foodpanda-20261110/">technews.tw</a></li><li><strong>太阳能电子纸看板</strong>：不用拉电、不用换电池的社区公告栏，电子纸的低功耗优势在这里最直观。<a href="https://finance.technews.tw/2026/11/10/e-ink-announces-strategic-investment-in-soofa-to-advance-sustainable-community-signage/">finance.technews.tw</a></li><li><strong>韩国用 AI 24 小时监测数字性犯罪</strong>：先用关键词自动蒐集、再由人工审查，决定是否通报平台下架。<a href="https://infosecu.technews.tw/2026/11/10/south-korea-ai-detects-digital-sex-crimes-24-7-monitoring/">infosecu.technews.tw</a></li></ol><h2>今日看点</h2><p class="takeaway"><strong>台积电一边发 9 元股利、一边认购 Anthropic 与 OpenAI，说明 AI 红利正从&quot;卖设备&quot;往&quot;持股&quot;转移；而黄仁勋事件已从八卦变成出口管制的变量，芯片供应链的政治风险溢价还会继续升。</strong></p>
 <footer>DeepSeek Harness · 每日 08:30 自动生成</footer>
 </body>

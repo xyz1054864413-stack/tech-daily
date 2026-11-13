@@ -65,6 +65,16 @@ footer{
   margin-top:56px;padding-top:16px;border-top:1px solid var(--hair);
   font:12px/1.8 "PingFang SC",sans-serif;color:var(--muted);text-align:center;
 }
+.dlbar{margin:26px 0 6px;text-align:center}
+.dlbtn{
+  display:inline-block;padding:17px 38px;border-radius:12px;background:var(--accent);
+  color:#fff !important;border:none;text-decoration:none;
+  font:700 18px/1 "PingFang SC","Hiragino Sans GB",sans-serif;letter-spacing:.04em;
+  box-shadow:0 5px 16px rgba(168,54,42,.25);
+}
+.dlbtn:active{transform:translateY(1px)}
+.dlhint{margin-top:11px;font:12.5px/1.7 "PingFang SC",sans-serif;color:var(--muted)}
+
 /* 目录页 */
 .index .lead{text-align:center;font-size:16px;color:var(--muted);margin:26px 0 44px}
 .issue{display:block;color:inherit;text-decoration:none;border:none;
@@ -97,7 +107,9 @@ footer{
   .takeaway{font-size:16.5px;line-height:1.7;padding:16px 16px}
   footer{margin-top:40px;font-size:11px}
 }
+@page{size:A4;margin:16mm 14mm}
 @media print{
+  .dlbar{display:none}
   html{background:#fff}
   body{width:auto;box-shadow:none;padding:0}
   a{color:inherit;border:none}
@@ -110,6 +122,7 @@ footer{
   <h1>科技新闻简报</h1>
   <div class="meta"><span>2026年11月11日（周三）</span><span>11/10 晚间 – 11/11 深夜（JST）</span></div>
 </header>
+<div class="dlbar"><a class="dlbtn" href="2026-11-11.pdf" download>⬇ 保存这一期（PDF）</a><div class="dlhint">点一下就能存到手机或电脑，不用注册、不用装 App</div></div>
 <h2>一、重大新闻</h2><article class="item"><h3>1. 黄仁勋风波升级：美参议员呼吁辞职，接班人选浮上台面</h3><p>辉达执行长黄仁勋与一名中国女商人的婚外情持续延烧，美国联邦参议院银行委员会共和党籍参议员克芮麦公开呼吁他辞职；外传女方为北京间谍、黄可能遭勒索。The Information 分析，猎头已在业内物色人选，超微执行长苏姿丰与安谋执行长哈斯都在名单上。</p><p class="src">来源：<a href="https://technews.tw/2026/11/11/kevin-cramer-calls-for-jensen-huang-to-resign/">technews.tw</a></p><p class="src">接班议题：<a href="https://finance.technews.tw/2026/11/11/jensen-huang-affair-succession-lisa-su-arm-ceo-candidates/">finance.technews.tw</a></p></article><article class="item"><h3>2. 黑名单上的共军背景大学，仍买到辉达 H200</h3><p>采购纪录显示，与中国人民解放军关系深厚的西北工业大学，尽管已被列入美国出口黑名单，上个月仍购得辉达 H200 AI 芯片。这暴露了华府在限制中国取得先进技术上的执行漏洞。</p><p class="src">来源：<a href="https://technews.tw/2026/11/11/pla-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist/">technews.tw</a></p></article><article class="item"><h3>3. OpenAI 建 Control Room：35 秒内可切断研究模型输出</h3><p>OpenAI 宣布在研究基础设施部署集中管控系统「Control Room」，一旦出现安全或资安疑虑，可在决定介入后 35 秒内阻止研究模型继续产生输出。官方说法是：模型越强，风险越高，&quot;能及时叫停&quot;越关键。</p><p class="src">来源：<a href="https://technews.tw/2026/11/11/openai-builds-a-kill-switch-for-its-research-models/">technews.tw</a></p></article><article class="item"><h3>4. OpenAI 第三季营收破 100 亿美元、付费用户约 1 亿，但亏损扩大</h3><p>OpenAI 第三季营收季增约五成至 100 亿美元，ChatGPT 付费用户约 1 亿人，但经调整营业亏损同步扩大，营收规模与营运效率仍落后 Anthropic。</p><p class="src">来源：<a href="https://finance.technews.tw/2026/11/11/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion/">finance.technews.tw</a></p></article><article class="item"><h3>5. 日本宜得利 3,762 万笔个资恐外泄</h3><p>家具连锁企业宜得利（NITORI）坦承服务器遭非法存取，最多可能泄漏 3,762 万笔会员个资（姓名、住址、电子邮件等）；短期打工媒合平台 Sharefull 也传出约 750 万名用户资料可能外泄，甚至涉及银行账户。日企接连遭攻击，外界点名&quot;代理式 AI&quot;正在降低攻击门槛。</p><p class="src">来源：<a href="https://finance.technews.tw/2026/11/11/nitori-cyber-attack/">finance.technews.tw</a></p></article><h2>二、行业动态</h2><ul><li><strong>AI 模型</strong>：Meta 超级智慧实验室推出至今最轻量、最具成本效益的模型 Muse Ember，主打低成本处理 Agent 的重复任务。<a href="https://technews.tw/2026/11/11/muse-introduces-muse-ember/">technews.tw</a></li><li><strong>太空算力</strong>：广发证券分析师预估 SpaceX 到 2028 年可能建成约 5GW 太空 AI 运算能力、在轨部署约 1 万个辉达 GPU 机架。<a href="https://technews.tw/2026/11/11/elon-musk-spacexs-next-gen-space-ai-satellites-could-boost-peak-compute-to-400kw/">technews.tw</a></li><li><strong>AI 泡沫论</strong>：业界警告 7,250 亿美元的 AI 基建投资，可能重演 1990 年代光纤过剩——设施还没回本，技术世代已经换了两轮。<a href="https://finance.technews.tw/2026/11/11/hidden-concerns-behind-ai-investment-craze/">finance.technews.tw</a></li><li><strong>中国消费</strong>：双 11 冷清，电商平台把促销常态化成&quot;平日卖三天、打折两天&quot;，购物节的仪式感已被稀释。<a href="https://technews.tw/2026/11/11/e-commerce-shifts-3-days-sales-2-days-discounts-weekdays-china-double-11-loses-luster/">technews.tw</a></li><li><strong>数据中心</strong>：东元与 GMI Cloud、KSDI 合作，赴日本九州鹿儿岛建 6.4MW 模组化 AI 数据中心。<a href="https://finance.technews.tw/2026/11/11/modular/">finance.technews.tw</a></li><li><strong>开源</strong>：Linus Torvalds 证实最新 Linux 内核更新中，大量进展来自 AI 协助产生的修复，且多为 1–2 行的小改动。<a href="https://technews.tw/2026/11/11/linus-torvalds-says-that-ai-fixes-drove-most-of-the-progress-in-latest-linux-kernel/">technews.tw</a></li><li><strong>PC 供应链</strong>：记忆体涨价超过一年，笔电出货自 Q3 起明显季减，部分 PC OEM 已计划削减 2026 Q4、甚至 2027 Q1 的采购量。<a href="https://technews.tw/2026/11/11/pc-inventory-piles-high-oems-adjust-2027-memory-procurement-strategy/">technews.tw</a></li></ul><h2>三、你可能感兴趣的</h2><ol><li><strong>Google Pixel Tag 双 11 在台开卖</strong>：Google 首款蓝牙定位器，透过 Find Hub 找钥匙、钱包、行李箱，直接对上 AirTag。<a href="https://ccc.technews.tw/2026/11/11/google-pixel-tag-launches-in-taiwan/">ccc.technews.tw</a></li><li><strong>Linus 说 AI 在帮 Linux 修 bug</strong>：提交量看着吓人，其实多是 1–2 行的小修补——这是&quot;AI 当助手&quot;最不喧哗的一种用法。<a href="https://technews.tw/2026/11/11/linus-torvalds-says-that-ai-fixes-drove-most-of-the-progress-in-latest-linux-kernel/">technews.tw</a></li><li><strong>双 11 没人狂欢了</strong>：当&quot;天天都是购物节&quot;，造节反而失效，这可能是中国消费心态变化最直观的指标。<a href="https://technews.tw/2026/11/11/e-commerce-shifts-3-days-sales-2-days-discounts-weekdays-china-double-11-loses-luster/">technews.tw</a></li><li><strong>法国 15 亿欧元升级&quot;太空之眼&quot;</strong>：IRIS 新一代侦察卫星交给空中巴士与 Thales，预计 2033 年服役。<a href="https://technews.tw/2026/11/11/franch-dga-awarded-1-5-billion-euro-contract-for-new-iris-to-airbus-and-thales/">technews.tw</a></li><li><strong>E Ink Spectra 6 从六色升到九色</strong>：电子纸的色彩表现又进一步，适合看板与海报场景。<a href="https://ccc.technews.tw/2026/11/11/e-ink-introduces-spectra-6-9-color-display-technology-with-enhanced-image-quality/">ccc.technews.tw</a></li></ol><h2>今日看点</h2><p class="takeaway"><strong>这一天两条线同时收紧：一条是&quot;人&quot;——黄仁勋的去留被参议员摆上桌面；另一条是&quot;货&quot;——黑名单上的大学照样买到 H200。</strong> 而 OpenAI 一面收入破百亿、一面装&quot;急停开关&quot;，说明头部实验室自己也在为失控风险买保险。</p>
 <footer>DeepSeek Harness · 每日 08:30 自动生成</footer>
 </body>

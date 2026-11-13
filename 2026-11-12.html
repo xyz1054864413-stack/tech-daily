@@ -65,6 +65,16 @@ footer{
   margin-top:56px;padding-top:16px;border-top:1px solid var(--hair);
   font:12px/1.8 "PingFang SC",sans-serif;color:var(--muted);text-align:center;
 }
+.dlbar{margin:26px 0 6px;text-align:center}
+.dlbtn{
+  display:inline-block;padding:17px 38px;border-radius:12px;background:var(--accent);
+  color:#fff !important;border:none;text-decoration:none;
+  font:700 18px/1 "PingFang SC","Hiragino Sans GB",sans-serif;letter-spacing:.04em;
+  box-shadow:0 5px 16px rgba(168,54,42,.25);
+}
+.dlbtn:active{transform:translateY(1px)}
+.dlhint{margin-top:11px;font:12.5px/1.7 "PingFang SC",sans-serif;color:var(--muted)}
+
 /* 目录页 */
 .index .lead{text-align:center;font-size:16px;color:var(--muted);margin:26px 0 44px}
 .issue{display:block;color:inherit;text-decoration:none;border:none;
@@ -97,7 +107,9 @@ footer{
   .takeaway{font-size:16.5px;line-height:1.7;padding:16px 16px}
   footer{margin-top:40px;font-size:11px}
 }
+@page{size:A4;margin:16mm 14mm}
 @media print{
+  .dlbar{display:none}
   html{background:#fff}
   body{width:auto;box-shadow:none;padding:0}
   a{color:inherit;border:none}
@@ -110,6 +122,7 @@ footer{
   <h1>科技新闻简报</h1>
   <div class="meta"><span>2026年11月12日（周三）</span><span>11/11 晚间 – 11/12 深夜（JST）</span></div>
 </header>
+<div class="dlbar"><a class="dlbtn" href="2026-11-12.pdf" download>⬇ 保存这一期（PDF）</a><div class="dlhint">点一下就能存到手机或电脑，不用注册、不用装 App</div></div>
 <h2>一、重大新闻</h2><article class="item"><h3>1. 黄仁勋确定离职，AI 供应链全面拉警报</h3><p>辉达（NVIDIA）董事会周日对黄仁勋与疑似中国间谍女子「Alice Huang」的关系启动调查，11/12 董事会开会讨论去留，当晚确认黄仁勋离职，财务长柯瑞斯（Colette Kress）接任临时 CEO。同日另爆出他与公司内部直属女副总裁有染。接班人赌盘从女儿黄敏珊、超微苏姿丰，一路点名到苹果前 CEO 库克。</p><p class="src">科技新报：<a href="https://technews.tw/2026/11/12/jensen-huang-step-down/">technews.tw</a></p><p class="src">接班人热议：<a href="https://finance.technews.tw/2026/11/12/jensen-huang-successor-debate-reignites-apple-ceo-tim-cook-emerges/">finance.technews.tw</a></p><p class="src">另爆出轨女主管：<a href="https://finance.technews.tw/2026/11/12/jensen-huang-reportedly-affair-female-executive-experts-warn-removal-major-blow-ai-industry/">finance.technews.tw</a></p></article><article class="item"><h3>2. 美国拟封堵 7 国转口通道，防中国借海外数据中心用辉达芯片</h3><p>新规最快本月公布，管制范围扩及马来西亚、新加坡、泰国等 7 国。与此同时，中国 AI 业者正抢租境外辉达算力，担心华府进一步收紧远程使用先进处理器的限制。</p><p class="src">科技新报：<a href="https://technews.tw/2026/11/12/us-reportedly-plans-block-7-countries-amid-concerns-china-nvidia-chips-overseas-data-centers/">technews.tw</a></p><p class="src">中企抢租算力：<a href="https://technews.tw/2026/11/12/jensen-huang-scandal-raises-regulatory-concerns-chinese-ai-firms-rush-to-lease-overseas-nvidia-computing-power/">technews.tw</a></p></article><article class="item"><h3>3. Baird 罕见下调辉达评级，目标价砍 60%</h3><p>除绯闻风波外，AI 资本支出成长前景与美国芯片出口管制的不确定性，让华尔街转趋保守。</p><p class="src">来源：<a href="https://finance.technews.tw/2026/11/12/baird-morgan-stanley-sour-on-nvidia-as-ceo-affair-controversy-deepens/">finance.technews.tw</a></p></article><article class="item"><h3>4. 日本无印良品 109 万笔信用卡资料恐外泄</h3><p>良品计划坦承遭骇，约 109 万笔会员信用卡资料外泄、约 34.5 万张卡仍有效；本该 2021 年删除的资料未遮蔽卡号持续保存，公司承认内部管理重大疏失，承诺补偿可能的盗刷。</p><p class="src">来源：<a href="https://finance.technews.tw/2026/11/12/muji-japan-1-09-million-credit-card-data-leak-16-digit-card-numbers-exposed/">finance.technews.tw</a></p></article><article class="item"><h3>5. MSCI 台股大换血，11/30 收盘生效</h3><p>台积电权重遭降 0.25%（失血最重），台燿成最大黑马；台股在 MSCI 全球市场指数权重由 3.25% 升至 3.28%。</p><p class="src">来源：<a href="https://finance.technews.tw/2026/11/12/taiwan-stock-market-undergoes/">finance.technews.tw</a></p></article><h2>二、行业动态</h2><ul><li><strong>苹果 AI 眼镜</strong>：中国设备供应商快克智能在法说会证实参与苹果 AI 眼镜及新款智慧耳机专案，首款最快 2027 年底上市，同步开发带摄像头的 AirPods。<a href="https://technews.tw/2026/11/12/quick-global-apple-ai-glass/">technews.tw</a></li><li><strong>华为新品牌</strong>：「OSTA 星芒」11/20 首秀，余承东称要探索更多 AI 新可能。<a href="https://ccc.technews.tw/2026/11/12/huawei-new-mobile-phone-brand-osta/">ccc.technews.tw</a></li><li><strong>半导体景气</strong>：英飞凌估 2027 财年营收增逾两成（数据中心、电力基础设施、车用芯片）；鸿海刘扬伟称芯片与记忆体供应吃紧，2027 年 AI 需求仍大于供给，3–5 年内 AI 云端产品占比拚超六成。<a href="https://finance.technews.tw/2026/11/12/infineon-closes-fy-2026-with-record-quarter/">finance.technews.tw</a> ｜ <a href="https://finance.technews.tw/2026/11/12/honhai-fr-26q3/">finance.technews.tw</a></li><li><strong>存储</strong>：传长江存储仍推进 IPO，力争 2027 年 Q1 科创板上市（彭博）。<a href="https://technews.tw/2026/11/12/chinese-flash-memory-giant-ymtc-said-to-target-ipo-in-early-2027/">technews.tw</a></li><li><strong>太空数据中心之争</strong>：AWS CEO Matt Garman 称十年内难落地，马斯克反击抛出 1TW 能源蓝图。<a href="https://technews.tw/2026/11/12/amazon-dismisses-space-data-centers/">technews.tw</a></li><li><strong>电子纸</strong>：元太下修全年营收成长率至 9%，AI 高速传输材料拚 2028 年放量。<a href="https://finance.technews.tw/2026/11/12/e-ink-holdings-2026-q3-earnings/">finance.technews.tw</a></li><li><strong>网安</strong>：日本拟扩大自卫队职权，平时也用 AI 侦测基础设施网攻。<a href="https://infosecu.technews.tw/2026/11/12/japan-self-defense-force-ai/">infosecu.technews.tw</a></li></ul><h2>三、你可能感兴趣的</h2><ol><li><strong>韦伯望远镜在「飞龙」星系捕捉 104 颗引力透镜放大恒星</strong>，打破同星系 44 颗的纪录，还可能为暗物质研究提供线索（论文已登 A&amp;A）。<a href="https://technews.tw/2026/11/12/jwst-tracks-more-than-100-magnified-stellar-events-in-the-dragon-galaxy/">technews.tw</a></li><li><strong>传奇邮轮「美国号」沉入佛州外海</strong>，成为全球最大人工鱼礁。<a href="https://technews.tw/2026/11/12/ss-united-states-sink/">technews.tw</a></li><li><strong>32 款手机续航横评</strong>：iPhone 18 Pro Max 夺冠，苹果五款上榜。<a href="https://technews.tw/2026/11/12/32-smartphone-battery-life/">technews.tw</a></li><li><strong>德州农工「5G CATS」</strong>：在 GPU 封装内整合 5G 通讯与硬体防护，用位置验证防堵高阶芯片走私（arXiv 预印本）。<a href="https://infosecu.technews.tw/2026/11/12/texas-a-m-university-5g-cats-chip-anti-smuggling-technology/">infosecu.technews.tw</a></li><li><strong>月球建材新解</strong>：宾州大学把数百张 Mylar 聚酯薄膜堆叠，做出兼顾隔热与抗弯的薄膜材料。<a href="https://technews.tw/2026/11/12/mylar-bopet-insulation-film/">technews.tw</a></li></ol><h2>今日看点</h2><p class="takeaway"><strong>黄仁勋离职与「封堵 7 国」同一天落地，意味着 AI 供应链的两条线——「人」和「货」——同时被收紧。</strong> 短线资金从「买算力」转向「买替代」；接下来看两件事：谁接任辉达 CEO，以及新出口管制细则会不会真的本月公布。</p>
 <footer>DeepSeek Harness · 每日 08:30 自动生成</footer>
 </body>
