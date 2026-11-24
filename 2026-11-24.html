@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fcfaf4">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="科技简报">
+<title>2026年11月24日（周一） · 科技新闻简报</title>
+<style>
+:root{
+  --ink:#1b1a17; --paper:#fcfaf4; --muted:#6f675b; --accent:#a8362a;
+  --hair:#ddd5c5; --page:#e8e2d5;
+}
+*{box-sizing:border-box}
+html{background:var(--page);-webkit-text-size-adjust:100%}
+body{
+  margin:0 auto; padding:56px 72px 96px; width:min(780px,94vw);
+  background:var(--paper); color:var(--ink);
+  font:19px/1.95 "Songti SC","STSong","Noto Serif CJK SC","Source Han Serif SC",serif;
+  box-shadow:0 1px 40px rgba(70,58,38,.12);
+}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(168,54,42,.28)}
+a:hover{border-bottom-color:var(--accent)}
+.masthead{text-align:center;padding:0 0 14px;border-bottom:3px double var(--ink)}
+.masthead h1{font:700 clamp(34px,5.2vw,50px)/1.12 "Songti SC",serif;letter-spacing:.10em;margin:0 0 12px}
+.meta{
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  font:11.5px/1 "PingFang SC","Hiragino Sans GB",sans-serif;
+  letter-spacing:.22em;color:var(--muted);
+}
+.dek{
+  font-size:17px;color:#4c463c;border-left:3px solid var(--accent);
+  padding:2px 0 2px 15px;margin:30px 0 44px;line-height:1.85;
+}
+h2{
+  font:700 12.5px/1 "PingFang SC","Hiragino Sans GB",sans-serif;
+  letter-spacing:.30em;color:var(--accent);
+  margin:56px 0 20px;padding-top:16px;border-top:1px solid var(--hair);
+}
+article h3{font:700 23px/1.55 "Songti SC",serif;margin:30px 0 10px}
+article p{margin:0 0 16px}
+.src{
+  display:block;font:12.5px/1.7 "PingFang SC","Hiragino Sans GB",sans-serif;
+  color:var(--muted);margin:-6px 0 14px;
+}
+.src a{color:var(--muted);border-bottom-color:rgba(111,103,91,.35);margin-right:12px}
+ul,ol{padding-left:1.35em;margin:0 0 18px}
+li{margin:.5em 0}
+li::marker{color:var(--accent)}
+blockquote{
+  margin:18px 0;padding:12px 18px;background:#f4efe3;border-left:3px solid var(--hair);
+  color:#4c463c;font-size:17px;
+}
+.takeaway{
+  margin:18px 0 0;padding:22px 24px;background:#f4efe3;
+  border-left:3px solid var(--accent);
+  font:700 20px/1.75 "Songti SC",serif;
+}
+footer{
+  margin-top:56px;padding-top:16px;border-top:1px solid var(--hair);
+  font:12px/1.8 "PingFang SC",sans-serif;color:var(--muted);text-align:center;
+}
+.dlbar{margin:26px 0 6px;text-align:center}
+.dlbtn{
+  display:inline-block;padding:17px 38px;border-radius:12px;background:var(--accent);
+  color:#fff !important;border:none;text-decoration:none;
+  font:700 18px/1 "PingFang SC","Hiragino Sans GB",sans-serif;letter-spacing:.04em;
+  box-shadow:0 5px 16px rgba(168,54,42,.25);
+}
+.dlbtn:active{transform:translateY(1px)}
+.dlhint{margin-top:11px;font:12.5px/1.7 "PingFang SC",sans-serif;color:var(--muted)}
+
+/* 目录页 */
+.index .lead{text-align:center;font-size:16px;color:var(--muted);margin:26px 0 44px}
+.issue{display:block;color:inherit;text-decoration:none;border:none;
+  border-top:1px solid var(--hair);padding:26px 0 10px}
+.issue:hover h2{color:var(--accent)}
+.issue:first-of-type{border-top:none}
+.issue .date{font:700 12px/1 "PingFang SC",sans-serif;letter-spacing:.24em;color:var(--accent)}
+.issue h2{border:none;padding:0;margin:10px 0 8px;letter-spacing:0;
+  font:700 24px/1.5 "Songti SC",serif;color:var(--ink)}
+
+.issue p{margin:0 0 12px;color:#4c463c;font-size:16.5px;line-height:1.85}
+.issue .go{font:12px/1 "PingFang SC",sans-serif;letter-spacing:.16em;color:var(--muted)}
+@media (max-width:700px){
+  html{font-size:16px}
+  body{padding:26px 18px 56px;width:100%;font-size:17px;line-height:1.85}
+  .masthead h1{font-size:clamp(26px,7.6vw,34px);letter-spacing:.06em;margin-bottom:10px}
+  .meta{font-size:10px;letter-spacing:.12em}
+  .lead,.index .lead{font-size:13px;margin:16px 0 24px;line-height:1.7}
+  .issue{padding:16px 0 4px}
+  .issue .date{font-size:10.5px;letter-spacing:.16em}
+  .issue h2{font-size:18px;line-height:1.5;margin:6px 0 6px}
+  .issue p{font-size:13.5px;line-height:1.72;margin:0 0 6px;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .issue .go{font-size:10.5px;letter-spacing:.1em}
+  h2{font-size:11px;margin:38px 0 14px;padding-top:12px}
+  article h3{font-size:19px;line-height:1.5;margin:24px 0 8px}
+  .src{font-size:11px;line-height:1.6}
+  article p{margin:0 0 13px}
+  ul,ol{padding-left:1.1em}
+  .takeaway{font-size:16.5px;line-height:1.7;padding:16px 16px}
+  footer{margin-top:40px;font-size:11px}
+}
+@page{size:A4;margin:16mm 14mm}
+@media print{
+  .dlbar{display:none}
+  html{background:#fff}
+  body{width:auto;box-shadow:none;padding:0}
+  a{color:inherit;border:none}
+  h2,h3{break-after:avoid}
+}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <h1>科技新闻简报</h1>
+  <div class="meta"><span>2026年11月24日（周一）</span><span>11/23 上午 – 11/24 上午（JST）</span></div>
+</header>
+<div class="dlbar"><a class="dlbtn" href="2026-11-24.pdf" download>⬇ 保存这一期（PDF）</a><div class="dlhint">点一下就能存到手机或电脑，不用注册、不用装 App</div></div>
+<h2>一、重大新闻</h2><article class="item"><h3>1. 记忆体涨价打到终端：印度手机销量暴跌 22%，DRAM 占旗舰机成本破 40%</h3><p>Counterpoint Research 指出，记忆体在部分高阶旗舰手机的物料清单（BoM）占比，已从 2025 年初约 13% 升至超过 40%，迫使品牌重新调整定价与产品策略。印度今年节庆购物季智慧手机销量年减 22%，跌幅超出预期——AI 抢走记忆体产能，代价正由消费电子承担。</p><p class="src">来源：<a href="https://technews.tw/2026/11/23/memory-phone-cost-india/">technews.tw</a></p></article><article class="item"><h3>2. 美情报总监示警：系统汰旧换新，恐酿更多科技当机</h3><p>美国近期接连发生航班停飞、银行系统故障，国家情报总监克莱顿表示，随着企业与政府机关汰换老旧系统，「美国民众应预期还会有更多当机和服务中心中断」。微软服务中断超过一天、FAA 航管异常之后，这句话听起来像预告而非提醒。</p><p class="src">来源：<a href="https://infosecu.technews.tw/2026/11/23/us-intelligence-director-system-upgrades-tech-outages/">infosecu.technews.tw</a></p></article><article class="item"><h3>3. 诺华浇冷水：AI 要在 5 到 10 年内治愈癌症，「不现实」</h3><p>诺华（Novartis）高层公开表示，外界期待 AI 在 5 至 10 年内攻克癌症「并不现实」；药物开发仍受限于临床验证与生物学理解，AI 能加速的是筛选与试验设计，不是跳过验证。</p><p class="src">来源：<a href="https://technews.tw/2026/11/23/novartis-rejects-ai-industry-hopes-to-cure-cancer-in-five-to-10-years/">technews.tw</a></p></article><article class="item"><h3>4. 追赶美中：安川电机宣布 2030 年推出 AI 人型机器人</h3><p>日本工业机器人大厂安川电机表示，将于 2030 年推出搭载 AI 的人型机器人，抢攻市占。日系厂商向来擅长可靠性与量产，但在「具身智能」的软件生态上落后美中，这一步是补课。</p><p class="src">来源：<a href="https://technews.tw/2026/11/23/yaskawa-electric-to-launch-ai-humanoid-robots-by-2030/">technews.tw</a></p></article><article class="item"><h3>5. 三星 2027 年机海升级：一次推 5 款折叠机 + 1 款卷轴机</h3><p>三星计划 2027 年推出多达 6 款折叠装置，除既有 Galaxy Z Fold、Z Flip，还可能出现卷轴屏幕的 Galaxy Z Slide 与三折机 Galaxy Z TriFold 2；部分型号已在资料库现身。</p><p class="src">来源：<a href="https://technews.tw/2026/11/23/galaxy-foldable-phone-rollable-phone/">technews.tw</a></p></article><h2>二、行业动态</h2><ul><li><strong>封装散热</strong>：12 吋碳化矽（SiC）跨入先进封装生态，Coherent 已向 AI 伙伴提供高导热基板样品，用于均热片与中介层。<a href="https://technews.tw/2026/11/23/12-inch-silicon-carbide-enters-the-advanced-packaging-ecosystem/">technews.tw</a></li><li><strong>车用芯片</strong>：高通汽车业务营收上看 80 亿美元，直接挑战英飞凌、恩智浦。<a href="https://technews.tw/2026/11/23/qualcomm-automotive-chip-business/">technews.tw</a></li><li><strong>天文运算</strong>：日本东大与 RIKEN 开发「PHEASANT」，用 AI 预测超新星周边气体演化，星系模拟提速约 20 倍，首度做到单一恒星解析度。<a href="https://technews.tw/2026/11/23/ai-galaxy-simulation/">technews.tw</a></li><li><strong>光通讯</strong>：CPO 上游整并再起，大厂扩张下台湾独立厂商转向专业制造与模组组装。<a href="https://technews.tw/2026/11/24/optical-communication-upstream-integration-independent-manufacturers-transformation-major-player-expansion/">technews.tw</a></li><li><strong>产学</strong>：华邦电与成功大学成立共同研发中心，每年投入 1,000 万元，聚焦 AI 制程优化、先进封装热管理与次世代电容。<a href="https://technews.tw/2026/11/23/winbond-partners-with-ncku-to-establish-joint-rd-center/">technews.tw</a></li><li><strong>加密</strong>：川普第三次迷因币晚宴大退烧，$TRUMP 从每枚约 75 美元跌到不足 1 美元。<a href="https://finance.technews.tw/2026/11/23/trump-hosts-gala-for-meme-coin-investors-as-his-token-plunges-to-record-lows/">finance.technews.tw</a></li></ul><h2>三、你可能感兴趣的</h2><ol><li><strong>指戴式滑鼠</strong>：食指控制、拇指点击，Borslon 在 Kickstarter 募到 4.5 万美元，预计 2027 年 2 月出货。<a href="https://technews.tw/2026/11/24/borslon-unveils-wearable-gaming-mouse/">technews.tw</a></li><li><strong>AI 帮忙模拟整个银河系</strong>：20 倍速、还能解析单颗恒星，天文模拟进入新阶段。<a href="https://technews.tw/2026/11/23/ai-galaxy-simulation/">technews.tw</a></li><li><strong>迷因币晚宴的落差</strong>：入场资格是买币，如今币值不到 1 美元，这顿饭吃得很贵。<a href="https://finance.technews.tw/2026/11/23/trump-hosts-gala-for-meme-coin-investors-as-his-token-plunges-to-record-lows/">finance.technews.tw</a></li><li><strong>卷轴手机要来了</strong>：三星 2027 年的产品线里出现 Galaxy Z Slide。<a href="https://technews.tw/2026/11/23/galaxy-foldable-phone-rollable-phone/">technews.tw</a></li><li><strong>记忆体涨价的连锁反应</strong>：从服务器、笔电一路打到印度中低阶手机。<a href="https://technews.tw/2026/11/23/memory-phone-cost-india/">technews.tw</a></li></ol><h2>今日看点</h2><p class="takeaway"><strong>记忆体涨价的故事开始反转：对芯片厂是利好，对终端是需求杀手。</strong> 印度手机销量 -22% 是第一个明确的终端警讯——当 DRAM 吃掉旗舰机四成成本，AI 的「算力通膨」终究要有人买单，而那个人是消费者。</p>
+<footer>DeepSeek Harness · 每日 08:30 自动生成</footer>
+</body>
+</html>
