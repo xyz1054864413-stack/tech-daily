@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fcfaf4">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="科技简报">
+<title>2026年11月25日（周二） · 科技新闻简报</title>
+<style>
+:root{
+  --ink:#1b1a17; --paper:#fcfaf4; --muted:#6f675b; --accent:#a8362a;
+  --hair:#ddd5c5; --page:#e8e2d5;
+}
+*{box-sizing:border-box}
+html{background:var(--page);-webkit-text-size-adjust:100%}
+body{
+  margin:0 auto; padding:56px 72px 96px; width:min(780px,94vw);
+  background:var(--paper); color:var(--ink);
+  font:19px/1.95 "Songti SC","STSong","Noto Serif CJK SC","Source Han Serif SC",serif;
+  box-shadow:0 1px 40px rgba(70,58,38,.12);
+}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(168,54,42,.28)}
+a:hover{border-bottom-color:var(--accent)}
+.masthead{text-align:center;padding:0 0 14px;border-bottom:3px double var(--ink)}
+.masthead h1{font:700 clamp(34px,5.2vw,50px)/1.12 "Songti SC",serif;letter-spacing:.10em;margin:0 0 12px}
+.meta{
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  font:11.5px/1 "PingFang SC","Hiragino Sans GB",sans-serif;
+  letter-spacing:.22em;color:var(--muted);
+}
+.dek{
+  font-size:17px;color:#4c463c;border-left:3px solid var(--accent);
+  padding:2px 0 2px 15px;margin:30px 0 44px;line-height:1.85;
+}
+h2{
+  font:700 12.5px/1 "PingFang SC","Hiragino Sans GB",sans-serif;
+  letter-spacing:.30em;color:var(--accent);
+  margin:56px 0 20px;padding-top:16px;border-top:1px solid var(--hair);
+}
+article h3{font:700 23px/1.55 "Songti SC",serif;margin:30px 0 10px}
+article p{margin:0 0 16px}
+.src{
+  display:block;font:12.5px/1.7 "PingFang SC","Hiragino Sans GB",sans-serif;
+  color:var(--muted);margin:-6px 0 14px;
+}
+.src a{color:var(--muted);border-bottom-color:rgba(111,103,91,.35);margin-right:12px}
+ul,ol{padding-left:1.35em;margin:0 0 18px}
+li{margin:.5em 0}
+li::marker{color:var(--accent)}
+blockquote{
+  margin:18px 0;padding:12px 18px;background:#f4efe3;border-left:3px solid var(--hair);
+  color:#4c463c;font-size:17px;
+}
+.takeaway{
+  margin:18px 0 0;padding:22px 24px;background:#f4efe3;
+  border-left:3px solid var(--accent);
+  font:700 20px/1.75 "Songti SC",serif;
+}
+footer{
+  margin-top:56px;padding-top:16px;border-top:1px solid var(--hair);
+  font:12px/1.8 "PingFang SC",sans-serif;color:var(--muted);text-align:center;
+}
+.dlbar{margin:26px 0 6px;text-align:center}
+.dlbtn{
+  display:inline-block;padding:17px 38px;border-radius:12px;background:var(--accent);
+  color:#fff !important;border:none;text-decoration:none;
+  font:700 18px/1 "PingFang SC","Hiragino Sans GB",sans-serif;letter-spacing:.04em;
+  box-shadow:0 5px 16px rgba(168,54,42,.25);
+}
+.dlbtn:active{transform:translateY(1px)}
+.dlhint{margin-top:11px;font:12.5px/1.7 "PingFang SC",sans-serif;color:var(--muted)}
+
+/* 目录页 */
+.index .lead{text-align:center;font-size:16px;color:var(--muted);margin:26px 0 44px}
+.issue{display:block;color:inherit;text-decoration:none;border:none;
+  border-top:1px solid var(--hair);padding:26px 0 10px}
+.issue:hover h2{color:var(--accent)}
+.issue:first-of-type{border-top:none}
+.issue .date{font:700 12px/1 "PingFang SC",sans-serif;letter-spacing:.24em;color:var(--accent)}
+.issue h2{border:none;padding:0;margin:10px 0 8px;letter-spacing:0;
+  font:700 24px/1.5 "Songti SC",serif;color:var(--ink)}
+
+.issue p{margin:0 0 12px;color:#4c463c;font-size:16.5px;line-height:1.85}
+.issue .go{font:12px/1 "PingFang SC",sans-serif;letter-spacing:.16em;color:var(--muted)}
+@media (max-width:700px){
+  html{font-size:16px}
+  body{padding:26px 18px 56px;width:100%;font-size:17px;line-height:1.85}
+  .masthead h1{font-size:clamp(26px,7.6vw,34px);letter-spacing:.06em;margin-bottom:10px}
+  .meta{font-size:10px;letter-spacing:.12em}
+  .lead,.index .lead{font-size:13px;margin:16px 0 24px;line-height:1.7}
+  .issue{padding:16px 0 4px}
+  .issue .date{font-size:10.5px;letter-spacing:.16em}
+  .issue h2{font-size:18px;line-height:1.5;margin:6px 0 6px}
+  .issue p{font-size:13.5px;line-height:1.72;margin:0 0 6px;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .issue .go{font-size:10.5px;letter-spacing:.1em}
+  h2{font-size:11px;margin:38px 0 14px;padding-top:12px}
+  article h3{font-size:19px;line-height:1.5;margin:24px 0 8px}
+  .src{font-size:11px;line-height:1.6}
+  article p{margin:0 0 13px}
+  ul,ol{padding-left:1.1em}
+  .takeaway{font-size:16.5px;line-height:1.7;padding:16px 16px}
+  footer{margin-top:40px;font-size:11px}
+}
+@page{size:A4;margin:16mm 14mm}
+@media print{
+  .dlbar{display:none}
+  html{background:#fff}
+  body{width:auto;box-shadow:none;padding:0}
+  a{color:inherit;border:none}
+  h2,h3{break-after:avoid}
+}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <h1>科技新闻简报</h1>
+  <div class="meta"><span>2026年11月25日（周二）</span><span>11/24 上午 – 11/25 上午（JST）</span></div>
+</header>
+<div class="dlbar"><a class="dlbtn" href="2026-11-25.pdf" download>⬇ 保存这一期（PDF）</a><div class="dlhint">点一下就能存到手机或电脑，不用注册、不用装 App</div></div>
+<h2>一、重大新闻</h2><article class="item"><h3>1. 川习二会：AI 热线开通、贸易休兵延长，晶片议题仍未解</h3><p>美中元首闭门会谈 90 分钟，双方同意将贸易休兵延长至明年 1 月，并建立 AI 相关热线。会后华府举行不公开国宴，罕见邀请辉达、微软、苹果、特斯拉、OpenAI 等 AI 巨头高层出席，引发外界揣测高阶晶片与稀土管制是否出现转机——但晶片问题本身并未列入协议。</p><p class="src">来源：<a href="https://technews.tw/2026/11/25/us-china-high-level-talks-ai-hotline-new-thaw-chip-issues-unresolved-trade-truce-extended/">technews.tw</a></p></article><article class="item"><h3>2. 黄仁勋复职后首次员工大会：公开道歉，称是「第二艰难的会议」</h3><p>辉达董事会恢复黄仁勋执行长职务后，他于 11 月 24 日主持首次全体大会，坦承个人行为造成公司与员工困扰并公开致歉，承诺以更高标准要求自己；他形容这是「除了与妻子沟通之外第二艰难的会议」。</p><p class="src">来源：<a href="https://finance.technews.tw/2026/11/25/jensen-huangs-first-all-hands-meeting-since-returning-to-his-role/">finance.technews.tw</a></p></article><article class="item"><h3>3. 苹果裁撤 Siri 旧架构团队，次世代 AI 助理最快 2027 年底登场</h3><p>古尔曼（Mark Gurman）透露，苹果近期针对 Siri 团队裁员，主要影响负责旧有底层架构的员工，开发新一代 AI 系统的团队则不受影响——这意味着真正的「新 Siri」还要等一年多。</p><p class="src">来源：<a href="https://technews.tw/2026/11/25/apple-ai-assistant-delay-2027-internal-reorg-siri-team-disbanded/">technews.tw</a></p></article><article class="item"><h3>4. CMU 教授创办 Xlue，募 3,500 万美元做癌症早期「风险分层」</h3><p>由卡内基美隆大学研究员创办的 Xlue 完成 3,500 万美元种子轮，由 Sarah Guo 的 Conviction 领投。公司以 AI 分析病患资料，协助医师辨识高癌症风险族群、提早安排检查与追踪。</p><p class="src">来源：<a href="https://technews.tw/2026/11/25/biotech-healthcare-ai-integration/">technews.tw</a></p></article><article class="item"><h3>5. AI 竞赛新战场：GW 级电力配额，比 GPU 更难抢</h3><p>拓墣产研指出，AI 竞争边界已从 GPU 配额转向「电网配额、发电端与输电路径」三位一体的 GW 级容量；公用电网扩建滞后，让表后储能、SOFC 微电网与离网自备电源成为大厂抢早期算力优势的必然战略。</p><p class="src">来源：<a href="https://technews.tw/2026/11/25/ai-giants-gw-power-quotas-co-location-heavy-electrical-supply-chain-reassessment/">technews.tw</a></p></article><h2>二、行业动态</h2><ul><li><strong>中企反制</strong>：阿里巴巴否认新加坡子公司 Apex 转售受管制先进晶片，称美方将其列入实体清单是错误，将循法律途径维权。<a href="https://technews.tw/2026/11/24/alibaba-denies-reselling-controlled-advanced-chips-us-blacklists-subsidiary/">technews.tw</a></li><li><strong>幕后角力</strong>：黄仁勋闪辞不到两周复职，背后有硅谷「战情室」与白宫高层介入的秘密游说。<a href="https://technews.tw/2026/11/24/jensen-huang-abruptly-resigned-reinstated-less-than-two-weeks-silicon-valley-war-room-behind-scenes-turn-tide/">technews.tw</a></li><li><strong>PCB</strong>：AI 抢占玻纤布产能垫高 PCB 价格，4Q26 COB/SMD LED 显示器成本季增约 2%。<a href="https://technews.tw/2026/11/24/ai-competition-fiberglass-fabric-capacity-pushes-up-pcb-prices-cob-smd-led-display-costs-rise-2-qoq-4q26/">technews.tw</a></li><li><strong>台股</strong>：野村投信认为台股远期本益比修正至 15 倍多，访查供应链「2027 年没有砍单」。<a href="https://finance.technews.tw/2026/11/24/taiwan-stock-price-to-earnings-ratio/">finance.technews.tw</a></li><li><strong>电力零组件</strong>：HVDC 放量仍有变数，台达电液冷与燃料电池成两大成长动能。<a href="https://technews.tw/2026/11/24/hvdc-volume-uncertainties-delta-electronics-two-growth-drivers-focus/">technews.tw</a></li></ul><h2>三、你可能感兴趣的</h2><ol><li><strong>黎曼猜想又吵起来了</strong>：Anthropic 研究员声称给出证明，另一位数学家随即发文质疑整套证明无效。<a href="https://technews.tw/2026/11/24/riemann-hypothesis-levent-alpoge-jenny-lorraine-nielsen/">technews.tw</a></li><li><strong>你就是主角</strong>：Google 专利曝光的 AI 个人化电视频道「My Channel」，会依你的观看纪录生成全天节目。<a href="https://technews.tw/2026/11/24/google-wants-to-make-ai-tv-shows-starring-you/">technews.tw</a></li><li><strong>AI 社员的「加班上限」</strong>：日本 DeNA 对外推出 AI 员工服务，用加班时间概念控管 Token 用量。<a href="https://technews.tw/2026/11/24/dena-ai-employee-services/">technews.tw</a></li><li><strong>反舰飞弹射程拚翻倍</strong>：美国陆战队评估把 NSM 从 250 公里推到 500 公里以上。<a href="https://technews.tw/2026/11/24/us-marine-aims-for-doubling-up-the-range-of-nsm/">technews.tw</a></li><li><strong>开放 vs 封闭 AI 的路线之争</strong>：有经济学家认为，黄仁勋回锅意味着开放权重阵营占了上风，恐冲击封闭式 AI 公司的商业模式。<a href="https://technews.tw/2026/11/24/jensen-huang-return-benefit-open-models-national-security-faction-loses-harm-closed-ai/">technews.tw</a></li></ol><h2>今日看点</h2><p class="takeaway"><strong>黄仁勋在 15 天内经历辞职、复职、道歉，而真正决定他能否坐稳的，已经不是董事会，而是白宫与美中谈判桌。</strong> 同一天，AI 竞争的关键字从「GPU 配额」变成「GW 级电力配额」——这场军备竞赛的主角，正在从芯片公司换成电网。</p>
+<footer>DeepSeek Harness · 每日 08:30 自动生成</footer>
+</body>
+</html>
